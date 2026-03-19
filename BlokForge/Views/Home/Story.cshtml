@@ -1,0 +1,16 @@
+@model StoryblokStory<Page>
+
+@foreach (var blok in Model.Content!.Body)
+{
+    try
+    {
+        @await Component.InvokeAsync("StoryblokBlock", blok)
+    }
+    catch (Exception ex)
+    {
+        @ex.Message
+        <br/>
+        @ex.StackTrace
+    }
+    
+}

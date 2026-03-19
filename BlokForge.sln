@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlokForge", "BlokForge\BlokForge.csproj", "{FFE0E4EC-EB8D-4C14-89AE-B8032C9776B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFE0E4EC-EB8D-4C14-89AE-B8032C9776B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE0E4EC-EB8D-4C14-89AE-B8032C9776B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE0E4EC-EB8D-4C14-89AE-B8032C9776B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE0E4EC-EB8D-4C14-89AE-B8032C9776B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
