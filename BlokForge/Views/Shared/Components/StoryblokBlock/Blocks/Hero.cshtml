@@ -1,6 +1,6 @@
 @model HeroModel
 
-<section class="py-5 bg-light" @Html.StoryblokEditable(Model)>>
+<section class="py-5 bg-light" @Html.StoryblokEditable(Model)>
     <div class="container py-5">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
@@ -21,15 +21,18 @@
                 </p>
 
                 <!-- CTAs -->
-                <div class="d-flex justify-content-center gap-3 flex-wrap">
-                    <a href="#" class="btn btn-primary btn-lg">
-                        Get Started
-                    </a>
+                @if (Model.Ctas is { Length: > 0 })
+                {
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        @for (var i = 0; i < Model.Ctas.Length; i++)
+                        {
+                            var cta = Model.Ctas[i];
+                            var buttonClass = i == 0 ? "btn btn-primary btn-lg" : "btn btn-outline-secondary btn-lg";
 
-                    <a href="#" class="btn btn-outline-secondary btn-lg">
-                        Learn More
-                    </a>
-                </div>
+                            <a model="cta" class="@buttonClass"></a>
+                        }
+                    </div>
+                }
 
             </div>
         </div>

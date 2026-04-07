@@ -8,8 +8,8 @@ namespace BlokForge.Models;
 public class Link : StoryblokComponent, IStoryblokBlock
 {
     [JsonPropertyName("text")] 
-    public string Text { get; set; }
+    public string? Text { get; set; }
     
     [JsonPropertyName("ref")] 
-    public StoryblokLink Ref { get; set; }
+    public StoryblokLinkModel? Ref { get; set; }
 }
